@@ -56,6 +56,13 @@ RSpec.configure do |config|
     end
   end
 
+#   RSpec.configure do |config|
+#   config.include Warden::Test::Helpers
+#   config.before :suite do
+#     Warden.test_mode!
+#   end
+# end
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

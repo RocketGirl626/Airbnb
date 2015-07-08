@@ -1,0 +1,15 @@
+<h1>Hello</h1>
+
+
+<% if @properties.any? %>
+   <ul>
+     <% @properties.each do |property| %>
+       <li><%= link_to property.name, property_path(property) %></li>
+     <% end %>
+   </ul>
+<% else %>
+   <p><h3>No Properties Currently in Index</h3></p>
+ <% end %>
+
+
+<%= link_to 'Add a New Property', new_property_path, class: "btn btn-success" %>
