@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users
-  get '/' => 'home#index'
+  get '/' => 'properties#index'
 
   # resources :users do
   #   resources :properties
